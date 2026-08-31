@@ -1,0 +1,182 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    color: #1a1a1a;
+    background-color: #fafafa;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Masthead */
+.masthead {
+    text-align: center;
+    padding: 3rem 1.5rem 2rem;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.masthead h1 {
+    font-size: 2rem;
+    font-weight: 300;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+.tagline {
+    font-size: 0.9rem;
+    color: #666;
+    font-style: italic;
+    max-width: 32rem;
+    margin: 0 auto;
+}
+
+/* Journal / Main Content */
+.journal {
+    max-width: 50rem;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+/* Look entries */
+.look {
+    background-color: #ffffff;
+    margin-bottom: 3rem;
+    border: 1px solid #e0e0e0;
+    overflow: hidden;
+}
+
+.look img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.look-details {
+    padding: 1.5rem;
+}
+
+.look-details time {
+    display: block;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #999;
+    margin-bottom: 0.75rem;
+}
+
+.look-details h2 {
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: 0.75rem;
+    letter-spacing: 0.02em;
+}
+
+.look-details p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: #333;
+}
+
+/* Footer */
+.site-footer {
+    background-color: #ffffff;
+    border-top: 1px solid #e0e0e0;
+    padding: 2rem 1.5rem;
+    text-align: center;
+}
+
+.webring {
+    margin-bottom: 1.5rem;
+}
+
+.webring-title {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #999;
+    margin-bottom: 0.75rem;
+}
+
+.webring-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.webring-links a {
+    font-size: 0.9rem;
+    color: #1a1a1a;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border: 1px solid #e0e0e0;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.webring-links a:active {
+    background-color: #f0f0f0;
+    border-color: #ccc;
+}
+
+.copyright {
+    font-size: 0.8rem;
+    color: #999;
+}
+
+/* Tablet and up */
+@media (min-width: 640px) {
+    .masthead h1 {
+        font-size: 2.5rem;
+    }
+    
+    .tagline {
+        font-size: 1rem;
+    }
+    
+    .journal {
+        padding: 3rem 2rem;
+    }
+    
+    .look {
+        margin-bottom: 4rem;
+    }
+    
+    .look-details {
+        padding: 2rem;
+    }
+    
+    .look-details h2 {
+        font-size: 1.5rem;
+    }
+    
+    .look-details p {
+        font-size: 1rem;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+    .masthead {
+        padding: 4rem 2rem 3rem;
+    }
+    
+    .masthead h1 {
+        font-size: 3rem;
+    }
+    
+    .journal {
+        padding: 4rem 2rem;
+    }
+    
+    .look-details {
+        padding: 2.5rem;
+    }
+}
